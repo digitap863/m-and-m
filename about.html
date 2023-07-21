@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>M & M | About</title>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Barlow:400,600%7COpen+Sans:400,400i,700' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+	
+	<!-- Css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-icons.css" />
+	<link rel="stylesheet" href="revolution/css/settings.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+<style>
+
+.about-bg {
+	background: linear-gradient(rgba(24, 20, 20, 0.5), rgba(0, 0, 0, 0.6)), url(img/intro/leaves-bg.jpg) no-repeat center; 
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:30px 0px;
+	background-attachment: fixed;
+}
+
+.centerimg {
+  width: 600px;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+
+.centerimg {
+  width: 85%;
+  margin: auto;
+}
+}
+
+section .centerimg a {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  display: block;
+  font-size: 1em;
+  letter-spacing: 2px;
+  overflow: hidden;
+  border-bottom: 3px solid #aaa69d;
+}
+section .centerimg p {
+  padding: 0px;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  background: #4e94ad;
+  color: #fff;
+  overflow: hidden;
+  letter-spacing: 1px;
+  transition: 1s;
+}
+section:target p {
+  height: auto;
+  opacity: 1;
+  padding: 20px;
+}
+
+#item1 a,#item2 a,#item3 a,#item4 a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.entry__article h3 {
+font-size:28px;
+}
+</style>	
+</head>
+<body>
+
+	<!-- Preloader -->
+	<div class="loader-mask">
+		<div class="loader">
+			"Loading..."
+		</div>
+	</div>
+
+	<main class="main-wrapper">
+
+		<!-- Navigation -->
+		<header class="nav">
+			<div class="nav__holder nav--sticky">
+				<div class="container-fluid nav__container nav__container--side-padding">
+					<div class="flex-parent">
+
+						<div class="nav__header">
+							<!-- Logo -->
+							<a href="index.html" class="logo-container flex-child">
+								<img class="logo" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
+							</a>
+
+							<!-- Mobile toggle -->
+							<button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="nav__icon-toggle-bar"></span>
+								<span class="nav__icon-toggle-bar"></span>
+								<span class="nav__icon-toggle-bar"></span>
+							</button>
+						</div>
+
+						<!-- Navbar -->
+						<nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse">
+							<ul class="nav__menu">
+								<li class="">
+									<a href="index.html" aria-haspopup="true">Home</a>
+								</li>
+								<li class="active">
+									<a href="about.html" aria-haspopup="true">About</a>
+								</li>
+
+								<li class="">
+									<a href="gallery.html" aria-haspopup="true">Gallery</a>
+								</li>
+								<li class="">
+									<a href="projects.html" aria-haspopup="true">Projects</a>
+								</li>
+								<li class="">
+									<a href="services.html" aria-haspopup="true">Services</a>
+								</li>
+								<li class="">
+									<a href="blog.html" aria-haspopup="true">Careers</a>
+								</li>
+								<li class="">
+									<a href="contact.html" aria-haspopup="true">Contact</a>
+								</li>
+							</ul> <!-- end menu -->
+							<div class="nav__phone nav__phone--mobile d-lg-none">
+								<span class="nav__phone-text">Call us:</span>
+								<a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
+							</div>
+
+							<div class="nav__socials nav__socials--mobile d-lg-none">
+								<div class="socials">
+									<a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+									<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+									<a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
+									<a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
+								</div>
+							</div>
+						</nav> <!-- end nav-wrap -->
+
+						<div class="nav__phone nav--align-right d-none d-lg-block">
+							<span class="nav__phone-text">Call us:</span>
+							<a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
+						</div>
+
+						<div class="nav__socials d-none d-lg-block">
+							<div class="socials">
+								<a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+								<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+								<a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
+								<a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
+							</div>
+						</div>
+
+					</div> <!-- end flex-parent -->
+				</div> <!-- end container -->
+
+			</div>
+		</header> <!-- end navigation -->
+
+
+		<div class="content-wrapper content-wrapper--boxed oh">
+
+      <!-- Page Title -->
+      <section class="page-title bg-dark-overlay text-center" style="background-image: url(img/revolution/home-4/3-1.png);">
+        <div class="container">
+          <div class="page-title__holder">
+            <h1 class="page-title__title">About Us</h1>
+						<!-- <p class="page-title__subtitle">For each project we establish relationships with partners</p> -->
+						<ul class="breadcrumbs">
+							<li class="breadcrumbs__item">
+							  <a href="index.html" class="breadcrumbs__url">Home</a>
+							</li>
+							<li class="breadcrumbs__item breadcrumbs__item--current">
+							  About Us
+							</li>
+						</ul>		
+          </div>
+        </div>
+      </section> <!-- end page title -->
+
+			<!-- Intro -->
+			<section class="section-wrap">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-10">
+							<div class="intro text-center">
+								<h2 class="mb-32">Our Story</h2>
+								<p class="lead">Welcome to M & M's Civil Engineering Solutions, where we believe in the harmony between nature and human progress. 
+								Our company overview reflects our deep-rooted passion for sustainable development, innovative design, and creating spaces that seamlessly blend with the environment.
+								At M & M's Civil Engineering Solutions, we take pride in our commitment to preserving the beauty of nature while providing cutting-edge engineering solutions.
+								<br>
+								We specialize in designing sustainable infrastructure that optimizes resource usage, enhances the quality of life for communities.
+								From urban planning to green building design, our solutions harmoniously make way for comfortable living, respecting the delicate balance of ecosystems.
+								Together, let's build a better world for generations to come.
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> <!-- end intro -->
+
+		<!-- Services -->
+			<!-- <section class="section-wrap pt-0 pb-0"> 
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-4 col-lg-6">
+							<div class="service-1">
+								<a href="#" class="service-1__url hover-scale">
+									<img src="img/services/v-2/1.jpg" class="service-1__img" alt="">
+								</a>								
+								<div class="service-1__info">
+									<h3 class="service-1__title">Interior design</h3>
+									<ul class="service-1__features">
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Modern Design</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Unique Foundation</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Smart Headting System</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-6">
+							<div class="service-1">
+								<a href="#" class="service-1__url hover-scale">
+									<img src="img/services/v-2/2.jpg" class="service-1__img" alt="">
+								</a>								
+								<div class="service-1__info">
+									<h3 class="service-1__title">Exterior design</h3>
+									<ul class="service-1__features">
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Modern Design</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Unique Foundation</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Smart Headting System</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-6">
+							<div class="service-1">
+								<a href="#" class="service-1__url hover-scale">
+									<img src="img/services/v-2/3.jpg" class="service-1__img" alt="">
+								</a>								
+								<div class="service-1__info">
+									<h3 class="service-1__title">Industrial premises</h3>
+									<ul class="service-1__features">
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Modern Design</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Unique Foundation</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Smart Headting System</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+       </section>   -->
+	  <!-- end services -->
+      
+
+	<!-- <section class="section-wrap about-bg">
+
+		<div class="centerimg">
+			<h3 class="service-1__title" style="text-align:center;color:#fff;font-weight:400;">Values We Value<hr style="margin:10px auto;width:165px"></h3><br>
+			<section id="item1">
+			  <a href="#item1">DESIGNED FOR LIFE <span>+</span></a>
+			  <p>Each property is conceptual, aimed at giving rise to a curated way of life. Designed, keeping you and your loved ones in mind, you can always expect the best from us.</p>
+			</section>
+			<section id="item2">
+			  <a href="#item2">HONESTY  <span>+</span></a>
+			  <p>We aim to revolutionize the landscape of Indian Real Estate.By centering our entire enterprise on empowering you to make informed choices when purchasing a home. Our mission is to inspire and guide you towards making the right decisions.</p>
+			</section> 
+			<section id="item3">
+			  <a href="#item3">BY EXPERT TEAMS <span>+</span></a>
+			  <p>We believe that it’s always better to work with master of ones, rather than a jack of all traits. Our integrated team of architects, landscapers and partners are curated for each project.</p>
+			</section>
+			<section id="item4">
+			  <a href="#item4">PROCESS DRIVEN <span>+</span></a>
+			  <p>When you make a to-do list, work gets done quicker. It’s the same with building a home. We make sure each part of the construction is done, one step at a time, perfectly.</p>
+			</section>
+		</div>
+		
+	</section>  -->
+
+
+	 <section class="pb-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="entry__article">
+
+									<figure class="alignright">
+										<img src="img/services/single/14 (2).jpg" alt="" style="border-radius: 10px;">
+									</figure>
+									<h3 style="font-family:'DM Serif Display', serif;font-weight:400;">Our Mission.</h3>
+									<p>Our mission is to build the best, cost-effective, and top-notch luxury apartments, real estate, 
+									and commercial properties that resonate with the needs and aspirations of our valued customers.
+									As a leading real estate company, we are dedicated to consistently achieving quality, trust, and teamwork to deliver life-changing experiences through our exceptional projects.</p>
+
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="entry__article">
+
+									<figure class="alignleft">
+										<img src="img/services/single/15.jpg" alt="" style="border-radius: 10px;">
+									</figure>
+									<h3 style="font-family:'DM Serif Display', serif;font-weight:400;">Our Vision.</h3>
+									<p>To lead the real estate industry with unwavering commitment to excellence, innovation, and skill enhancement.
+									We aspire to be a driving force in transforming the real estate landscape, setting new benchmarks, and shaping the future of construction.</p>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+	</section>
+
+      <!-- Statistic -->
+      <div class="container">
+        <div class="statistic-wrap">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="statistic">
+                <span class="statistic__number">461</span>
+                <h5 class="statistic__title">Sucessful Projects</h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistic">
+                <span class="statistic__number">290</span>
+                <h5 class="statistic__title">Happy Customers</h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistic">
+                <span class="statistic__number">45</span>
+                <h5 class="statistic__title">Team Members</h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistic">
+                <span class="statistic__number">36</span>
+                <h5 class="statistic__title">Awards</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end statistic -->
+
+      <!-- Team -->
+    <!-- <section class="section-wrap">
+        <div class="container">
+          <div class="row">
+
+
+            <div class="col-lg-12">
+              <div class="slick-slider slick-team">
+                <div class="team-col">
+                  <div class="team hover-trigger">
+                    <div class="team__img-holder">
+                      <img src="img/team/1.jpg" alt="" class="team__img">
+                      <div class="hover-overlay">
+                        <div class="team__details text-center">
+                          <div class="socials socials--white">
+                            <a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+                            <a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
+                            <a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>										
+                    <h5 class="team__name">Melissa Shredinger</h5>
+                    <span class="team__occupation">Interior Designer</span>								
+                  </div>
+                </div>
+
+                <div class="team-col">
+                  <div class="team hover-trigger">
+                    <div class="team__img-holder">
+                      <img src="img/team/2.jpg" alt="" class="team__img">
+                      <div class="hover-overlay">
+                        <div class="team__details text-center">
+                          <div class="socials socials--white">
+                            <a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+                            <a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+                            <a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
+                            <a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>										
+                    <h5 class="team__name">Donald Thompson</h5>
+                    <span class="team__occupation">Architect</span>								
+                  </div>
+                </div>
+
+                <div class="team-col">
+                  <div class="team hover-trigger">
+                    <div class="team__img-holder">
+                      <img src="img/team/3.jpg" alt="" class="team__img">
+                      <div class="hover-overlay">
+                        <div class="team__details text-center">
+                          <div class="socials socials--white">
+                            <a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+                            <a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+                            <a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
+                            <a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>										
+                    <h5 class="team__name">Melissa Shredinger</h5>
+                    <span class="team__occupation">Sedona White</span>								
+                  </div>
+                </div>
+
+              </div> 
+            </div>
+
+          </div>
+        </div>
+      </section> --> <!-- end team -->
+
+
+			<!-- Partners -->
+			<div class="partners bg-light text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/1.png" alt="">
+							</a>
+						</div>
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/2.png" alt="">
+							</a>
+						</div>
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/3.png" alt="">
+							</a>
+						</div>
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/4.png" alt="">
+							</a>
+						</div>
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/5.png" alt="">
+							</a>
+						</div>
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/6.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+      </div>
+      
+
+			<!-- Footer -->
+			<footer class="footer bg-dark-overlay" style="background-image: url("img/footer/1.jpg");">
+				<div class="container-fluid">
+					<div class="footer__widgets">
+						<div class="row">
+
+							<div class="col-lg-3 col-md-3">
+								<div class="widget widget-about-us">
+									<!-- Logo -->
+									<a href="index.html" class="logo-container flex-child">
+										<img class="logo" src="img/logo_white.png" srcset="img/logo_white.png 1x, img/logo_white@2x.png 2x" alt="logo">
+									</a>
+								</div>
+							</div> <!-- end logo -->
+
+							<div class="col-lg-2 col-md-3">
+								<div class="widget widget_nav_menu">
+									<ul>
+										<li><a href="#">About</a></li>
+										<li><a href="#">Services</a></li>
+										<li><a href="#">Blog</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-lg-2 col-md-3">
+								<div class="widget widget_nav_menu">
+									<ul>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Terms &amp; Conditions</a></li>
+										<li><a href="#">Career</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-lg-3 offset-lg-2 col-md-3">
+								<div class="widget">
+									<div class="socials">
+										<a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+										<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+										<a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
+										<a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div> <!-- end container -->
+
+				<div class="footer__bottom">
+					<div class="container-fluid text-right text-md-center">
+						<span class="copyright">
+							&copy; 2018 Sedona, Made by <a href="https://deothemes.com">DeoThemes</a>
+						</span>
+					</div>
+				</div> <!-- end footer bottom -->
+			</footer> <!-- end footer -->
+
+			<div id="back-to-top">
+				<a href="#top"><i class="ui-arrow-up"></i></a>
+			</div>
+
+		</div> <!-- end content wrapper -->
+	</main> <!-- end main wrapper -->
+
+
+	<!-- jQuery Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/scripts.js"></script>
+
+
+</body>
+</html>

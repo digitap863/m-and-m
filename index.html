@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>M & M's | Civil Engineering Solutions</title>
+
+	<meta charset="utf-8">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="">
+
+	<!-- Google Fonts -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		
+	<link href='https://fonts.googleapis.com/css?family=Barlow:400,600%7COpen+Sans:400,400i,700' rel='stylesheet'>
+
+	<!-- Css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-icons.css" />
+	<link rel="stylesheet" href="revolution/css/settings.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+<style>
+
+.pb-40 p {
+	letter-spacing: 1px;
+	text-align: justify;
+}
+.bg-dark-overlay:before {
+    opacity: 0.9;
+}
+
+.about-bg {
+	background: linear-gradient(rgba(24, 20, 20, 0.5), rgba(0, 0, 0, 0.6)), url(img/intro/leaves-bg.jpg) no-repeat center; 
+	background-size: 100% 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding:44px 0px;
+	background-attachment: fixed;
+}
+.centerimg {
+  width: 600px;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+
+.centerimg {
+  width: 85%;
+  margin: auto;
+}
+}
+
+section .centerimg a {
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  display: block;
+  font-size: 1em;
+  letter-spacing: 2px;
+  overflow: hidden;
+  border-bottom: 3px solid #aaa69d;
+}
+section .centerimg p {
+  padding: 0px;
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  background: #4e94ad;
+  color: #fff;
+  overflow: hidden;
+  letter-spacing: 1px;
+  transition: 1s;
+}
+section:target p {
+  height: auto;
+  opacity: 1;
+  padding: 20px;
+}
+
+#item1 a,#item2 a,#item3 a,#item4 a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-img {
+margin-left:22px;
+}
+
+@media (max-width:992px) {
+	#about-img {
+	 margin-left:0px;
+	}
+}
+</style>	
+
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<div class="loader-mask">
+		<div class="loader">
+			"Loading..."
+		</div>
+  </div>
+  
+  <!-- Bg Overlay -->
+  <div class="content-overlay"></div>
+
+	<main class="main-wrapper">
+
+    <!-- Sidenav -->
+		<header class="nav">
+			<div class="nav__holder nav--sticky">
+				<div class="container-fluid nav__container nav__container--side-padding">
+					<div class="flex-parent">
+
+						<div class="nav__header">
+							<!-- Logo -->
+							<a href="index.html" class="logo-container flex-child">
+								<img class="logo" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
+							</a>
+
+							<!-- Mobile toggle -->
+							<button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="nav__icon-toggle-bar"></span>
+								<span class="nav__icon-toggle-bar"></span>
+								<span class="nav__icon-toggle-bar"></span>
+							</button>
+						</div>
+
+						<!-- Navbar -->
+						<nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse">
+							<ul class="nav__menu">
+								<li class="active">
+									<a href="index.html" aria-haspopup="true">Home</a>
+								</li>
+								<li class="nav__dropdown">
+									<a href="about.html" aria-haspopup="true">About</a>
+								</li>
+
+								<li class="">
+									<a href="gallery.html" aria-haspopup="true">Gallery</a>
+								</li>
+								<li class="">
+									<a href="projects.html" aria-haspopup="true">Projects</a>
+								</li>
+								<li class="">
+									<a href="services.html" aria-haspopup="true">Services</a>
+								</li>
+								<li class="">
+									<a href="blog.html" aria-haspopup="true">Careers</a>
+								</li>
+								<li class="">
+									<a href="contact.html" aria-haspopup="true">Contact</a>
+								</li>
+							</ul> <!-- end menu -->
+
+							<div class="nav__phone nav__phone--mobile d-lg-none">
+								<span class="nav__phone-text">Call us:</span>
+								<a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
+							</div>
+
+							<div class="nav__socials nav__socials--mobile d-lg-none">
+								<div class="socials">
+									<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+									<a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
+									<a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
+								</div>
+							</div>
+						</nav> <!-- end nav-wrap -->
+
+						<div class="nav__phone nav--align-right d-none d-lg-block">
+							<span class="nav__phone-text">Call us:</span>
+							<a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
+						</div>
+
+						<div class="nav__socials d-none d-lg-block">
+							<div class="socials">
+								<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+								<a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
+								<a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
+							</div>
+						</div>
+
+					</div> <!-- end flex-parent -->
+				</div> <!-- end container -->
+
+			</div>
+		</header> <!-- end navigation -->
+
+	<!--	<header class="nav nav-1">
+			<div class="nav__holder">
+				<div class="nav__container container-fluid nav__container--side-padding">
+
+					<div class="flex-parent">
+
+						<div class="nav__header">
+							<a href="index.html" class="logo-container flex-child">
+								<img class="logo" src="img/logo.png" srcset="img/logo.png 1x, img/logo@2x.png 2x" alt="logo">
+              </a>
+
+              <button type="button" class="nav__icon-toggle" id="nav__icon-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="nav__icon-toggle-bar"></span>
+                <span class="nav__icon-toggle-bar"></span>
+                <span class="nav__icon-toggle-bar"></span>
+              </button>
+            </div>
+
+            <nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse">
+              <ul class="nav__menu">
+                <li class="nav__dropdown active">
+                  <a href="index.html">Home</a>
+                  <i class="ui-arrow-down nav__dropdown-trigger" role="button" aria-haspopup="true" aria-expanded="false"></i>
+                  <ul class="nav__dropdown-menu">
+                    <li><a href="index.html">Home 1</a></li>
+                    <li><a href="index-2.html">Home 2</a></li>
+                    <li><a href="index-3.html">Home 3</a></li>
+                    <li><a href="index-4.html">Home 4</a></li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </nav>
+            
+            <button class="nav-icon-toggle d-lg-block d-none" id="nav-icon-toggle" aria-label="Open side menu">
+              <span class="nav-icon-toggle__box">
+                <span class="nav-icon-toggle__inner"></span>
+              </span>
+            </button>
+
+					</div> 
+				</div>
+
+			</div>
+		</header> -->
+
+
+		<div class="content-wrapper content-wrapper--boxed oh">
+
+			<!-- Revolution Slider -->
+			<div class="rev_slider_wrapper">
+				<div class="rev_slider" id="slider-4" data-version="5.0">
+					<ul>
+						<!-- SLIDE 1 -->
+						<li data-fstransition="fade"
+							data-transition="scaledownfrombottom"
+							data-easein="default"
+							data-easeout="default"
+							data-slotamount="1"
+							data-masterspeed="1200"
+							data-delay="8000"
+							data-title="Sedona Theater"
+							>
+							<!-- MAIN IMAGE -->
+							<img src="img/revolution/home-4/1-1.png"
+								alt=""
+								data-bgrepeat="no-repeat"
+								data-bgfit="cover"
+								data-bgparallax="7"
+								class="rev-slidebg"
+								>
+
+							<!-- HERO TITLE -->
+							<div class="tp-caption hero-text"
+								data-x="30"
+								data-y="center"
+								data-voffset="[-70,-50,-30,-130]"
+                data-fontsize="[72,62,52,46]"
+                data-lineheight="[72,62,52,46]"
+                data-width="[none, none, none, 300]"
+                data-whitespace="[nowrap, nowrap, nowrap, normal]"
+								data-frames='[{
+									"delay":1000,
+									"speed":900,
+									"frame":"0",
+									"from":"y:150px;opacity:0;",
+									"ease":"Power3.easeOut",
+									"to":"o:1;"
+									},{
+									"delay":"wait",
+									"speed":1000,
+									"frame":"999",
+									"to":"opacity:0;","ease":"Power3.easeOut"
+								}]'
+								data-splitout="none">Modern Homes<br>Timeless Elegance<span class="hero-dot">.</span>
+							</div>
+
+							<!-- HERO SUBTITLE -->
+							<div class="tp-caption small-text"
+								data-x="30"
+								data-y="center"
+								data-voffset="[30,40,50,50]"
+								data-fontsize="[21,21,21,21]"
+								data-lineheight="34"
+								data-width="[none, none, none, 300]"
+								data-whitespace="[nowrap, nowrap, nowrap, normal]"
+								data-frames='[{
+									"delay":1100,
+									"speed":900,
+									"frame":"0",
+									"from":"y:150px;opacity:0;",
+									"ease":"Power3.easeOut",
+									"to":"o:1;"
+									},{
+									"delay":"wait",
+									"speed":1000,
+									"frame":"999",
+									"to":"opacity:0;","ease":"Power3.easeOut"
+								}]'
+								>Unveiling the Future of Living: Elevate Your Lifestyle in Extraordinary Abodes!
+							</div>
+
+							<!-- BUTTON -->
+							<div class="tp-caption"
+									data-x="30"
+									data-y="center"
+									data-voffset="[130,130,130,190]"
+									data-lineheight="55"
+									data-hoffset="0"
+									data-frames='[{
+										"delay":1200,
+										"speed":900,
+										"frame":"0",
+										"from":"y:150px;opacity:0;",
+										"ease":"Power3.easeOut",
+										"to":"o:1;"
+										},{
+										"delay":"wait",
+										"speed":1000,
+										"frame":"999",
+										"to":"opacity:0;","ease":"Power3.easeOut"
+									}]'
+									><a href='view-project' class='btn btn--lg btn--color'>View Project</a>
+							</div>
+
+						</li> <!-- end slide 1 -->
+
+						<!-- SLIDE 2 -->
+						<li data-transition="scaledownfrombottom"
+							data-easein="default"
+							data-easeout="default"
+							data-slotamount="1"
+							data-masterspeed="1200"
+							data-delay="8000"
+							data-title="Sedona Theater"
+							>
+							<!-- MAIN IMAGE -->
+							<img src="img/revolution/home-4/2-1.png"
+								alt=""
+								data-bgrepeat="no-repeat"
+								data-bgfit="cover"
+								data-bgparallax="7"
+								class="rev-slidebg"
+								>
+
+							<!-- HERO TITLE -->
+							<div class="tp-caption hero-text"
+								data-x="30"
+								data-y="center"
+								data-voffset="[-70,-50,-30,-130]"
+                data-fontsize="[72,62,52,46]"
+                data-lineheight="[72,62,52,46]"
+                data-width="[none, none, none, 300]"
+                data-whitespace="[nowrap, nowrap, nowrap, normal]"
+								data-frames='[{
+									"delay":1000,
+									"speed":900,
+									"frame":"0",
+									"from":"y:150px;opacity:0;",
+									"ease":"Power3.easeOut",
+									"to":"o:1;"
+									},{
+									"delay":"wait",
+									"speed":1000,
+									"frame":"999",
+									"to":"opacity:0;","ease":"Power3.easeOut"
+								}]'
+								data-splitout="none">Crafting Dreams<br>Building Homes<span class="hero-dot">.</span>
+							</div>
+
+							<!-- HERO SUBTITLE -->
+							<div class="tp-caption small-text"
+								data-x="30"
+								data-y="center"
+								data-voffset="[30,40,50,50]"
+								data-fontsize="[21,21,21,21]"
+								data-lineheight="34"
+								data-width="[none, none, none, 300]"
+								data-whitespace="[nowrap, nowrap, nowrap, normal]"
+								data-frames='[{
+									"delay":1100,
+									"speed":900,
+									"frame":"0",
+									"from":"y:150px;opacity:0;",
+									"ease":"Power3.easeOut",
+									"to":"o:1;"
+									},{
+									"delay":"wait",
+									"speed":1000,
+									"frame":"999",
+									"to":"opacity:0;","ease":"Power3.easeOut"
+								}]'
+								>Unveiling the Future of Living: Elevate Your Lifestyle in Extraordinary Abodes!
+							</div>
+
+							<!-- BUTTON -->
+							<div class="tp-caption"
+									data-x="30"
+									data-y="center"
+									data-voffset="[130,130,130,190]"
+									data-lineheight="55"
+									data-hoffset="0"
+									data-frames='[{
+										"delay":1200,
+										"speed":900,
+										"frame":"0",
+										"from":"y:150px;opacity:0;",
+										"ease":"Power3.easeOut",
+										"to":"o:1;"
+										},{
+										"delay":"wait",
+										"speed":1000,
+										"frame":"999",
+										"to":"opacity:0;","ease":"Power3.easeOut"
+									}]'
+									><a href='#' class='btn btn--lg btn--color'>View Project</a>
+							</div>
+
+            </li> <!-- end slide 2 -->
+            
+            <!-- SLIDE 3 -->
+            <li data-transition="scaledownfrombottom"
+              data-easein="default"
+              data-easeout="default"
+              data-slotamount="1"
+              data-masterspeed="1200"
+              data-delay="8000"
+              data-title="Sedona Theater"
+              >
+              <!-- MAIN IMAGE -->
+              <img src="img/revolution/home-4/3-1.png"
+                alt=""
+                data-bgrepeat="no-repeat"
+                data-bgfit="cover"
+                data-bgparallax="7"
+                class="rev-slidebg"
+                >
+
+              <!-- HERO TITLE -->
+              <div class="tp-caption hero-text"
+                data-x="30"
+                data-y="center"
+                data-voffset="[-70,-50,-30,-130]"
+                data-fontsize="[72,62,52,46]"
+                data-lineheight="[72,62,52,46]"
+                data-width="[none, none, none, 300]"
+                data-whitespace="[nowrap, nowrap, nowrap, normal]"
+                data-frames='[{
+                  "delay":1000,
+                  "speed":900,
+                  "frame":"0",
+                  "from":"y:150px;opacity:0;",
+                  "ease":"Power3.easeOut",
+                  "to":"o:1;"
+                  },{
+                  "delay":"wait",
+                  "speed":1000,
+                  "frame":"999",
+                  "to":"opacity:0;","ease":"Power3.easeOut"
+                }]'
+                data-splitout="none">Creating Timeless Spaces<br>for Inspired Living!
+              </div>
+
+              <!-- HERO SUBTITLE -->
+              <div class="tp-caption small-text"
+                data-x="30"
+                data-y="center"
+                data-voffset="[30,40,50,50]"
+                data-fontsize="[21,21,21,21]"
+                data-lineheight="34"
+                data-width="[none, none, none, 300]"
+                data-whitespace="[nowrap, nowrap, nowrap, normal]"
+                data-frames='[{
+                  "delay":1100,
+                  "speed":900,
+                  "frame":"0",
+                  "from":"y:150px;opacity:0;",
+                  "ease":"Power3.easeOut",
+                  "to":"o:1;"
+                  },{
+                  "delay":"wait",
+                  "speed":1000,
+                  "frame":"999",
+                  "to":"opacity:0;","ease":"Power3.easeOut"
+                }]'
+                >Unveiling the Future of Living: Elevate Your Lifestyle in Extraordinary Abodes!
+              </div>
+
+              <!-- BUTTON -->
+              <div class="tp-caption"
+                  data-x="30"
+                  data-y="center"
+                  data-voffset="[130,130,130,190]"
+                  data-lineheight="55"
+                  data-hoffset="0"
+                  data-frames='[{
+                    "delay":1200,
+                    "speed":900,
+                    "frame":"0",
+                    "from":"y:150px;opacity:0;",
+                    "ease":"Power3.easeOut",
+                    "to":"o:1;"
+                    },{
+                    "delay":"wait",
+                    "speed":1000,
+                    "frame":"999",
+                    "to":"opacity:0;","ease":"Power3.easeOut"
+                  }]'
+                  ><a href='#' class='btn btn--lg btn--color'>View Project</a>
+              </div>
+
+            </li> <!-- end slide 3 -->
+
+					</ul>
+				</div>
+			</div>
+
+			<section class="section-wrap intro">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-7">
+							<h2 class="intro__title">About Us</h2>
+							<p>M & M's Civil Engineering Solutions Pvt. Ltd. is one of fastest growing and highly reputed firms in the field of civil engineering.Since its inception in 1996 as Nishith and Associates, our company has remained committed to assisting individuals in bringing their visions to life.
+								We offer unparalleled architectural solutions to those embarking on the pursuit of their dream homes. In 2002, we transitioned to a partnership and established
+								Vaastuniketan in Puthiyangadi, Calicut. Later, in 2016, we rebranded as an independent firm called M and M Civil Engineering Solutions, located in West Hill Chungam.
+								With a remarkable track record of over 2500+ successfully completed designs and executions in South India, we specialize in Traditional architecture as well as renovation and facelift projects.
+								</p>
+						<p>We have expertise in providing sustainable solutions in the execution of large and complex urban and industrial infrastructure projects
+						We specialize in a wide range of civil engineering services, including infrastructure design, construction management, site development, and project planning.     
+						</p>
+						<!-- <div class="row mb-lg-48">
+								<div class="col-sm-4">
+									<div class="feature">
+										<i class="icon-Hotel-3 feature__icon"></i>
+										<h4 class="feature__title">Architecture</h4>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="feature">
+										<i class="icon-Ruler-Tool feature__icon"></i>
+										<h4 class="feature__title">Interior Design</h4>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="feature">
+										<i class="icon-Trowel-and-Brick feature__icon"></i>
+										<h4 class="feature__title">Construction</h4>
+									</div>
+								</div>
+							</div> -->
+
+						</div>
+						<div class="col-lg-5">
+							<img id="about-img" src="img/intro/2.jpg" class="img-full-width" alt="" style="border-radius: 10px;opacity:0.9;">
+						</div>
+					</div>
+				</div>
+			</section> <!-- end intro -->
+
+	<!-- start about accordian -->	  
+	<section class="section-wrap about-bg">
+
+		<div class="centerimg">
+			<h3 class="service-1__title" style="text-align:center;color:#fff;font-weight:400;">Values We Value<hr style="margin:10px auto;width:165px"></h3><br>
+			<section id="item1">
+			  <a href="#item1">DESIGNED FOR LIFE <span>+</span></a>
+			  <p>Each property is conceptual, aimed at giving rise to a curated way of life. Designed, keeping you and your loved ones in mind, you can always expect the best from us.</p>
+			</section>
+			<section id="item2">
+			  <a href="#item2">HONESTY  <span>+</span></a>
+			  <p>We aim to revolutionize the landscape of Indian Real Estate.By centering our entire enterprise on empowering you to make informed choices when purchasing a home. Our mission is to inspire and guide you towards making the right decisions.</p>
+			</section> 
+			<section id="item3">
+			  <a href="#item3">BY EXPERT TEAMS <span>+</span></a>
+			  <p>We believe that it’s always better to work with master of ones, rather than a jack of all traits. Our integrated team of architects, landscapers and partners are curated for each project.</p>
+			</section>
+			<section id="item4">
+			  <a href="#item4">PROCESS DRIVEN <span>+</span></a>
+			  <p>When you make a to-do list, work gets done quicker. It’s the same with building a home. We make sure each part of the construction is done, one step at a time, perfectly.</p>
+			</section>
+		</div>
+		
+	</section>  
+	 <!-- end about accordian -->
+
+			<!-- Portfolio -->
+			<section class="section-wrap pt-72 pb-72 pb-lg-40">
+				<div class="container">
+					<div class="title-row">
+						<h2 class="section-title">Discover Recent Works</h2>
+					</div>					
+
+					<!-- Filter -->
+					<div class="masonry-filter">
+						<a href="#" class="filter active" data-filter="*">All</a>
+						<a href="#" class="filter" data-filter=".residential">Residential</a>
+						<a href="#" class="filter" data-filter=".commercial">Commercial</a>
+						<a href="#" class="filter" data-filter=".interior">Interior</a>
+						<a href="#" class="filter" data-filter=".landscape">Landscape</a>
+						<a href="#" class="filter" data-filter=".landscape2">Vasthu</a>
+					</div> <!-- end filter -->
+
+					<!-- <div class="row masonry-grid">
+							
+						<div class="masonry-item col-lg-4 project hover-trigger residential">
+							<div class="project__container">
+								<div class="project__img-holder">
+									<a href="portfolio-single.html">
+										<img src="img/portfolio/masonry/1.jpg" alt="" class="project__img">
+										<div class="hover-overlay">
+											<div class="project__description">
+												<h3 class="project__title">Keangnam Grand Hall</h3>
+												<span class="project__date">2018</span>
+											</div>
+										</div>
+									</a>              
+								</div>                  
+							</div> 
+						</div> 
+
+						<div class="masonry-item col-lg-4 project hover-trigger commercial">
+							<div class="project__container">
+								<div class="project__img-holder">
+									<a href="portfolio-single.html">
+										<img src="img/portfolio/masonry/2.jpg" alt="" class="project__img">
+										<div class="hover-overlay">
+											<div class="project__description">
+												<h3 class="project__title">Green House</h3>
+												<span class="project__date">2018</span>
+											</div>
+										</div>
+									</a>              
+								</div>                  
+							</div> 
+						</div> 
+
+						<div class="masonry-item col-lg-4 project hover-trigger landscape">
+							<div class="project__container">
+								<div class="project__img-holder">
+									<a href="portfolio-single.html">
+										<img src="img/portfolio/masonry/4.jpg" alt="" class="project__img">
+										<div class="hover-overlay">
+											<div class="project__description">
+												<h3 class="project__title">Business Office</h3>
+												<span class="project__date">2018</span>
+											</div>
+										</div>
+									</a>              
+								</div>                  
+							</div> 
+						</div> 
+
+						<div class="masonry-item col-lg-4 project hover-trigger landscape2">
+							<div class="project__container">
+								<div class="project__img-holder">
+									<a href="portfolio-single.html">
+										<img src="img/living copy.jpg" alt="" class="project__img">
+										<div class="hover-overlay">
+											<div class="project__description">
+												<h3 class="project__title">Vasthu</h3>
+												<span class="project__date">2018</span>
+											</div>
+										</div>
+									</a>              
+								</div>                  
+							</div> 
+						</div> 
+
+					</div> -->
+
+					<div class="col-lg-12">
+						<div class="slick-slider slick-team">
+						  <div class="team-col residential">
+							<div class="team hover-trigger">
+							  <div class="team__img-holder">
+								<img src="img/projects/amrt 2.jpg" alt="" class="team__img">
+								<div class="hover-overlay">
+								  <div class="team__details text-center">
+									<div class="socials socials--white">
+									  <a href="#" class="social-twitter" target="_blank">More Details</a>
+									  
+									</div>
+								  </div>
+								</div>
+							  </div>										
+							  <h5 class="team__name">Kakkanad</h5>
+							  <span class="team__occupation"> Ernakulam</span>								
+							</div>
+						  </div>
+		  
+						  <div class="team-col residential">
+							<div class="team hover-trigger">
+							  <div class="team__img-holder">
+								<img src="img/projects/benny philip.jpg" alt="" class="team__img" width="353px" height="258px">
+								<div class="hover-overlay">
+								  <div class="team__details text-center">
+									<div class="socials socials--white">
+										<a href="#" class="social-twitter" target="_blank">More Details</a>
+									</div>
+								  </div>
+								</div>
+							  </div>										
+							  <h5 class="team__name">Paroppady</h5>
+							  <span class="team__occupation"> Kozhikode</span>								
+							</div>
+						  </div>
+		  
+						  <div class="team-col residential">
+							<div class="team hover-trigger">
+							  <div class="team__img-holder">
+								<img src="img/projects/JAJISH-2.jpg" alt="" class="team__img">
+								<div class="hover-overlay">
+								  <div class="team__details text-center">
+									<div class="socials socials--white">
+										<a href="#" class="social-twitter" target="_blank">More Details</a>
+									</div>
+								  </div>
+								</div>
+							  </div>										
+							  <h5 class="team__name">Pathanamthitta</h5>
+							  <span class="team__occupation">Sedona White</span>								
+							</div>
+						  </div>
+
+						  <div class="team-col residential">
+							<div class="team hover-trigger">
+							  <div class="team__img-holder">
+								<img src="img/projects/PRASAD-2.jpg" alt="" class="team__img">
+								<div class="hover-overlay">
+								  <div class="team__details text-center">
+									<div class="socials socials--white">
+										<a href="#" class="social-twitter" target="_blank">More Details</a>
+									</div>
+								  </div>
+								</div>
+							  </div>										
+							  <h5 class="team__name">Chengannur</h5>								
+							</div>
+						  </div>
+						  
+						  <div class="team-col residential">
+							<div class="team hover-trigger">
+							  <div class="team__img-holder">
+								<img src="img/projects/living.jpg" alt="" class="team__img">
+								<div class="hover-overlay">
+								  <div class="team__details text-center">
+									<div class="socials socials--white">
+										<a href="#" class="social-twitter" target="_blank">More Details</a>
+									</div>
+								  </div>
+								</div>
+							  </div>										
+							  <h5 class="team__name">Melissa Shredinger</h5>
+							  <span class="team__occupation">Sedona White</span>								
+							</div>
+						  </div>
+
+						  <div class="team-col residential">
+							<div class="team hover-trigger">
+							  <div class="team__img-holder">
+								<img src="img/projects/living.png" alt="" class="team__img">
+								<div class="hover-overlay">
+								  <div class="team__details text-center">
+									<div class="socials socials--white">
+										<a href="#" class="social-twitter" target="_blank">More Details</a>
+									</div>
+								  </div>
+								</div>
+							  </div>										
+							  <h5 class="team__name">Melissa Shredinger</h5>								
+							</div>
+						  </div>
+
+						</div> <!-- end slider -->
+					</div>
+
+
+				</div>
+			</section> <!-- end portfolio -->
+
+			<section class="section-wrap bg-dark-overlay" style="background-image: url(img/intro/architecture.jpg);background-attachment:fixed !important;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="process">
+								<i class="icon-Ruler-Tool process__icon"></i>
+								<h4 class="process__title">Safety and Quality Assurance</h4>
+								<p class="process__text">Ensuring adherence to strict safety protocols and quality standards throughout the construction process.</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="process">
+								<i class="icon-Book-Write process__icon"></i>
+								<h4 class="process__title">Construction Consulting</h4>
+								<p class="process__text"> Providing professional advice and consulting services on construction-related matters</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="process">
+								<i class="icon-Truck-1 process__icon"></i>
+								<h4 class="process__title">24 x 7</h4>
+								<p class="process__text">Experience uninterrupted customer services with our 24x7 support.</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="process">
+								<i class="icon-House-Key-3 process__icon"></i>
+								<h4 class="process__title">Sustainability</h4>
+								<p class="process__text">Promoting sustainable construction practices and offering expertise in green building design.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+      <!-- Statistic -->
+      <div class="container">
+        <div class="statistic-wrap" style="margin-bottom: 40px;">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="statistic">
+                <span class="statistic__number">20+</span>
+                <h5 class="statistic__title">Years of Experience</h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistic">
+                <span class="statistic__number">100+</span>
+                <h5 class="statistic__title">Sucessful Projects</h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistic">
+                <span class="statistic__number">250+</span>
+                <h5 class="statistic__title">Happy Customers</h5>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="statistic">
+                <span class="statistic__number">10+</span>
+                <h5 class="statistic__title">Ongoing Projects</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end statistic -->
+
+			<!-- Testimonials -->
+			<section class="section-wrap bg-dark-overlay" style="background-image: url(img/testimonials/bg.jpg);">
+				<div class="container">
+					<div class="title-row text-center">
+						<p class="subtitle">Testimonials</p>
+						<h2 class="section-title">What clients say about us</h2>
+						<i class="quote">“</i>
+					</div>					
+
+					<div class="slick-slider slick-testimonials" style="color:#bfbfbf">
+
+						<div class="testimonial clearfix">
+							<div class="testimonial__body">
+								<p class="testimonial__text">“I have witnessed and admired the work for years. I highly recommend this work for anyone seeking to increase.”</p>
+							</div>
+							<div class="testimonial__info">
+								<span class="testimonial__author">Joeby </span>
+							<!-- <span class="testimonial__company">DeoThemes</span> -->
+							</div>
+						</div>
+
+						<div class="testimonial clearfix">
+							<div class="testimonial__body">
+								<p class="testimonial__text">“M & M Contractors have a higher level of understanding of the client’s need and are extremely professional in executing work without any issues or problems.”</p>
+							</div>
+							<div class="testimonial__info">
+								<span class="testimonial__author">Alexander</span>
+							</div>
+						</div>
+
+						<div class="testimonial clearfix">
+							<div class="testimonial__body">
+								<p class="testimonial__text">“I have witnessed and admired the work for years. I highly recommend this work for anyone seeking to increase.”</p>
+							</div>
+							<div class="testimonial__info">
+								<span class="testimonial__author">Mr. Gopinath</span>
+							</div>
+						</div>
+
+						<div class="testimonial clearfix">
+							<div class="testimonial__body">
+								<p class="testimonial__text">“ What truly sets M & M apart is their commitment to client satisfaction.They maintained clear and transparent communication, ensuring that my vision and requirements were understood and implemented effectively.
+									 Their dedication to delivering projects on time and within budget is commendable.”</p>
+							</div>
+							<div class="testimonial__info">
+								<span class="testimonial__author">Alexander</span>
+							</div>
+						</div>
+
+					</div> <!-- end slider -->
+
+				</div>
+			</section> <!-- end testimonials -->
+
+	<!-- Newsletter -->
+			<section class="section-wrap bg-light newsletter">
+				<div class="container">
+					<div class="title-row title-row--boxed text-center">
+						<h3 class="section-title">Our Daily Newsletter</h3>
+						<p class="lead">Get the latest and our most important news</p>
+					</div>
+					<div class="widget widget_mc4wp_form_widget">
+						<div class="newsletter__container">
+							<div class="newsletter__form">
+								<form class="mc4wp-form" method="post">
+									<div class="mc4wp-form-fields">
+										<div class="form-group">
+											<input type="email" name="EMAIL" placeholder="Your email" required="" style="border-radius: 10px;">
+										</div>
+										<div class="form-group">
+											<input type="submit" class="btn btn--lg btn--color" value="Subscribe Now" style="border-radius: 10px;">
+										</div>
+									</div>
+								</form>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</section> <!-- end newsletter -->
+
+			<div class="partners bg-light text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/1.png" alt="">
+							</a>
+						</div>
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/2.png" alt="">
+							</a>
+						</div>
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/3.png" alt="">
+							</a>
+						</div>
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/4.png" alt="">
+							</a>
+						</div>
+						<div class="col-sm-2">
+							<a href="#">
+								<img src="img/partners/5.png" alt="">
+							</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+			<!-- From Blog -->
+		<!-- <section class="section-wrap blog-grid">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="blog-grid__title-col d-flex flex-column mb-lg-48">
+								<div class="title-row">
+									<p class="subtitle">From Blog</p>
+									<h2 class="section-title">Specialized news</h2>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequun tur magni dolores eos qui
+									ratione</p>
+								</div>
+								<div class="call-us mt-auto">
+									<i class="icon-Dispacher-2 call-us__icon"></i>
+									<span class="call-us__title">Call us anytime</span>
+									<a href="tel:1-800-995-3959" class="call-us__phone-number"> 1-800-995-3959</a>
+								</div>
+							</div>							
+						</div>						
+
+						<div class="col-lg-7 offset-lg-1">
+							<div class="from-blog">
+								<div class="row row-60">
+									<div class="col-lg-6">
+										<article class="entry">
+											<div class="entry__img-holder">
+												<a href="single-post.html">
+													<img src="img/blog/from_blog_1.jpg" class="entry__img" alt="">
+												</a>
+											</div>
+											<div class="entry__body">
+												<ul class="entry__meta">
+													<li class="entry__meta-date">
+														<span>15 November 2018</span>
+													</li>
+												</ul>
+												<h4 class="entry__title">
+													<a href="single-post.html">Best buildings of 2018 revealed at day one of World Architecture Festival 2018.</a>
+												</h4>
+											</div>
+										</article>
+									</div>
+									<div class="col-lg-6">
+										<article class="entry">
+											<div class="entry__img-holder">
+												<a href="single-post.html">
+													<img src="img/blog/from_blog_2.jpg" class="entry__img" alt="">
+												</a>
+											</div>
+											<div class="entry__body">
+												<ul class="entry__meta">
+													<li class="entry__meta-date">
+														<span>15 November 2018</span>
+													</li>
+												</ul>
+												<h4 class="entry__title">
+													<a href="single-post.html">Sunken washroom by Studio 304 allows residents to bathe in a garden setting.</a>
+												</h4>
+											</div>
+										</article>
+									</div>
+								</div>
+								<div class="from-blog__recent-posts">
+									<ul class="from-blog__recent-posts-list">
+										<li class="from-blog__recent-posts-item">
+											<span class="from-blog__post-number">1</span>
+											<a href="single-post.html" class="from-blog__post-url">Guadalajara offers "extraordinary opportunities" for young architects</a>
+										</li>
+										<li class="from-blog__recent-posts-item">
+											<span class="from-blog__post-number">2</span>
+											<a href="single-post.html" class="from-blog__post-url">Lacy Brick by Pamphilon ArchitectsResidentialPamphilon Architects adds textured
+											brick extension to Edwardian house in London</a>
+										</li>
+										<li class="from-blog__recent-posts-item">
+											<span class="from-blog__post-number">3</span>
+											<a href="single-post.html" class="from-blog__post-url">Guadalajara offers "extraordinary opportunities" for young architects</a>
+										</li>
+									</ul>
+								</div>								 
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section> -->
+			<!-- end from blog -->      
+
+		<!-- Services -->
+		<!--	<section class="section-wrap pt-0 pb-0">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-4 col-lg-6">
+							<div class="service-1">
+								<a href="#" class="service-1__url hover-scale">
+									<img src="img/services/v-2/1.jpg" class="service-1__img" alt="">
+								</a>								
+								<div class="service-1__info">
+									<h3 class="service-1__title">Interior design</h3>
+									<ul class="service-1__features">
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Modern Design</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Unique Foundation</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Smart Headting System</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-6">
+							<div class="service-1">
+								<a href="#" class="service-1__url hover-scale">
+									<img src="img/services/v-2/2.jpg" class="service-1__img" alt="">
+								</a>								
+								<div class="service-1__info">
+									<h3 class="service-1__title">Exterior design</h3>
+									<ul class="service-1__features">
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Modern Design</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Unique Foundation</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Smart Headting System</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-6">
+							<div class="service-1">
+								<a href="#" class="service-1__url hover-scale">
+									<img src="img/services/v-2/3.jpg" class="service-1__img" alt="">
+								</a>								
+								<div class="service-1__info">
+									<h3 class="service-1__title">Industrial premises</h3>
+									<ul class="service-1__features">
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Modern Design</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Unique Foundation</span>
+										</li>
+										<li class="service-1__feature">
+											<i class="ui-check service-1__feature-icon"></i>
+											<span class="service-1__feature-text">Smart Headting System</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+      </section>  -->
+	  <!-- end services -->
+
+
+			<!-- Footer -->
+			<footer class="" style="background-image: url(img/footer/3.jpg);">
+				<div class="container-fluid">
+					<div class="footer__widgets">
+						<div class="row">
+
+							<div class="col-lg-3 col-md-3">
+								<div class="widget widget-about-us">
+									<!-- Logo -->
+									<a href="index.html" class="logo-container flex-child">
+										<img class="logo" src="img/logo_white.png" srcset="img/logo_white.png 1x, img/logo_white@2x.png 2x" alt="logo">
+									</a>
+								</div>
+							</div> <!-- end logo -->
+
+							<div class="col-lg-2 col-md-3">
+								<div class="widget widget_nav_menu">
+									<ul>
+										<li><a href="#">About</a></li>
+										<li><a href="#">Services</a></li>
+										<li><a href="#">Blog</a></li>
+										<li><a href="#">Contact</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-lg-2 col-md-3">
+								<div class="widget widget_nav_menu">
+									<ul>
+										<li><a href="#">Privacy Policy</a></li>
+										<li><a href="#">Terms &amp; Conditions</a></li>
+										<li><a href="#">Career</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="col-lg-3 offset-lg-2 col-md-3">
+								<div class="widget">
+									<div class="socials">
+										<a href="#" class="social social-twitter" aria-label="twitter" title="twitter" target="_blank"><i class="ui-twitter"></i></a>
+										<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+										<a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
+										<a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div> <!-- end container -->
+			</footer> <!-- end footer -->
+
+			<div id="back-to-top">
+				<a href="#top"><i class="ui-arrow-up"></i></a>
+			</div>
+
+		</div> <!-- end content wrapper -->
+	</main> <!-- end main wrapper -->
+
+
+	<!-- jQuery Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="js/rev-slider.js"></script>
+	<script src="js/scripts.js"></script>
+
+
+	<!-- Rev Slider Offline Scripts -->
+	<script src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+	<script src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+	<script src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+
+</body>
+</html>
