@@ -530,7 +530,8 @@ address {
 }
 
 .btn--color {
-  background-color: #00AEEF;
+  background-color: #00b2f5;
+  opacity: .9;
 }
 
 .btn--color:hover {
@@ -1507,7 +1508,7 @@ textarea.material__input {
 }
 
 .slick-dots .slick-active button:before {
-  background-color: #ffb31a;
+  background-color: #0087ba;
 }
 
 .slick-prev:before {
