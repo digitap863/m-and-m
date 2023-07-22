@@ -3296,13 +3296,13 @@ a.cc-btn.cc-dismiss:hover, a.cc-btn.cc-dismiss:focus {
 @media only screen and (max-width: 991px) {
   .project-1 {
     display: block;
-    margin-bottom: 48px;
+    margin-bottom: 66px;
   }
   .project-1__container, .project-1__description-holder {
     width: 100%;
   }
   .project-1__description-holder {
-    padding: 40px 30px;
+    padding: 26px 30px;
     position: relative;
     top: auto;
     -webkit-transform: none;
