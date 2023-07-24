@@ -352,7 +352,7 @@ address {
 
 @media only screen and (max-width: 767px) {
   .section-wrap {
-    padding: 60px 0;
+    padding: 60px 6px;
   }
 }
 
@@ -381,9 +381,9 @@ address {
 }
 
 @media (min-width: 1060px) {
-  .content-wrapper--boxed {
+  /* .content-wrapper--boxed {
     padding: 0 30px 30px 30px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 992px) {
@@ -2262,7 +2262,7 @@ img.mfp-img {
 
 .social {
   display: inline-block;
-  color: #222222;
+   color: #fff; /* Social links change */
   text-align: center;
   margin-right: 30px;
   font-size: 18px;
@@ -3869,6 +3869,18 @@ figcaption {
   position: relative;
   /* Dropdowns (large screen) */
 }
+/* New Class For Nav */
+
+
+@media only screen and (min-width: 1062px) {
+.nav {
+  position: absolute;
+}
+.nav__container {
+  position: fixed;
+}
+
+}
 
 .nav__wrap {
   padding-left: 20px;
@@ -3880,19 +3892,19 @@ figcaption {
   }
 }
 
-.nav__container {
+/* .nav__container {
   position: relative;
-}
+} */
 
 @media only screen and (min-width: 1200px) {
   .nav__container--side-padding {
-    padding: 0 56px;
+    padding: 0 10px;
   }
 }
 
 @media only screen and (max-width: 1199px) {
   .nav__container--side-padding {
-    padding: 0 30px;
+    padding: 0 3px;
   }
 }
 
@@ -3936,7 +3948,7 @@ figcaption {
 .nav__menu > li > a {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
-  color: #222222;
+  color: #f2f2f2;
   font-size: 15.5px;
   padding: 0 17px;
   line-height: 95px;
@@ -3944,12 +3956,21 @@ figcaption {
   position: relative;
 }
 
+@media only screen and (max-width: 1062px) {
+.nav__menu > li > a {
+  color: #222222;
+  }
+  .nav__phone-text, .nav__phone-number {
+    color: #222222;
+  }
+}
+
 .nav__menu > li > a:hover {
-  color: #2f6faa;
+  color: #4196e5;
 }
 
 .nav__menu > .active > a {
-  color: #2f6faa;
+  color: #4196e5;
 }
 
 @media only screen and (min-width: 992px) {
@@ -4178,15 +4199,16 @@ header .flex-parent {
   transform: translate3d(0, 0px, 0);
 }
 
-.nav__holder.sticky {
-  position: fixed;
-  background-color: #fff;
+ .nav__holder.sticky {
+   position: fixed; 
+   background-color: #fff !important;
   visibility: hidden;
-  opacity: 0;
+  opacity: 1;
   left: 0;
   right: 0;
   top: 0;
-}
+  display: none;
+} 
 
 .nav__holder.sticky.scrolling {
   opacity: 1;
@@ -4195,7 +4217,15 @@ header .flex-parent {
 
 .nav__holder.sticky .nav__menu > li > a {
   line-height: 60px;
+  color:black !important;
+  
 }
+
+.nav__holder.sticky.scrolling {
+  background-color: #fff !important;
+  z-index: 1000 !important;
+}
+
 
 .nav__holder.sticky .nav__container-box {
   padding: 0;
@@ -4513,7 +4543,7 @@ header .flex-parent {
 }
 
 .nav__phone-text, .nav__phone-number {
-  color: #222222;
+  color: #f2f2f2;
 }
 
 .nav__phone + .nav__socials {
@@ -4962,7 +4992,7 @@ iframe {
 .tp-caption.hero-text {
   color: #fff;
   /* text-shadow: none; */
-  text-shadow: 2px 4px #000000;
+  text-shadow: 2px 2.5px #000000;
   font-weight: 700;
   line-height: 60px;
   font-family: "Barlow", sans-serif;
