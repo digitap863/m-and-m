@@ -2274,7 +2274,7 @@ img.mfp-img {
 }
 
 .social:last-child {
-  margin-right: 0;
+  margin-right: 12px;
 }
 
 .social-facebook:hover {
@@ -2690,7 +2690,7 @@ img.mfp-img {
   width: 100%;
   overflow: hidden;
   display: block;
-  padding: 175px 0;
+  padding: 285px 0;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -3904,7 +3904,7 @@ figcaption {
 
 @media only screen and (max-width: 1199px) {
   .nav__container--side-padding {
-    padding: 0 3px;
+    padding: 0 8px;
   }
 }
 
@@ -3949,7 +3949,7 @@ figcaption {
   font-family: "Barlow", sans-serif;
   font-weight: 700;
   color: #f2f2f2;
-  font-size: 15.5px;
+  font-size: 17px;
   padding: 0 17px;
   line-height: 95px;
   display: block;
@@ -3961,7 +3961,10 @@ figcaption {
   color: #222222;
   }
   .nav__phone-text, .nav__phone-number {
-    color: #222222;
+    color: #222222 !important;
+  }
+  #soc1 .social {
+    color: #222222 !important;
   }
 }
 
@@ -4063,6 +4066,21 @@ figcaption {
 -------------------------------------------------------*/
 .logo {
   line-height: 1;
+}
+
+@media (min-width:1062px) {
+  .logo.imgmobile {
+  display:none;
+  }
+}
+  
+  @media (max-width:1062px) {
+  .logo.imgmobile {
+  display:block;
+  }
+  .logo.desktop {
+  display:none;
+  }
 }
 
 /* Nav Flexbox
