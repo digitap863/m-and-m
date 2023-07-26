@@ -1372,7 +1372,7 @@ a.widget.widget-hover-effect4:active {
 #login-alt-container {
     position: absolute;
     width: 300px;
-    top: 10px;
+    top: 20%;
     left: 50%;
     margin-left: -150px;
     z-index: 1000;

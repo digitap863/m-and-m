@@ -269,6 +269,11 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   }
 }
 
+/* Message Confirmation */
+.confirmation {
+  display: none;
+}
+
 .section-headings p {
   margin-bottom: 40px;
 }
@@ -2737,7 +2742,7 @@ img.mfp-img {
 
 @media only screen and (max-width: 767px) {
   .page-title {
-    padding: 60px 0;
+    padding: 90px 0;
   }
 }
 
@@ -3899,7 +3904,7 @@ figcaption {
 
 @media only screen and (min-width: 1200px) {
   .nav__container--side-padding {
-    padding: 0 22px;
+    padding: 0 18px;
   }
 }
 
@@ -4572,8 +4577,8 @@ header .flex-parent {
 }
 
 .nav__phone + .nav__socials {
-  padding-left: 44px;
-  margin-left: 44px;
+  padding-left: 24px;
+  margin-left: 24px;
   border-left: 1px solid #e5e5e5;
 }
 

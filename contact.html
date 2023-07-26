@@ -32,7 +32,10 @@
 color:#47515a;
 }
 .material__input {
-border: 1px solid #4196e5;
+	border-bottom: 2.2px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
 }
 </style>
 </head>
@@ -171,7 +174,7 @@ border: 1px solid #4196e5;
 								</ul>
 								
 								<h5 class="contact__title mt-40">Follow Us</h5>
-								<div class="socials" id="soc2">
+								<div class="socials mb-40" id="soc2">
 									<a href="#" class="social social-facebook" aria-label="facebook" title="facebook" target="_blank"><i class="ui-facebook"></i></a>
 									<a href="#" class="social social-youtube" aria-label="youtube" title="google plus" target="_blank"><i class="ui-youtube"></i></a>
 									<a href="#" class="social social-instagram" aria-label="instagram" title="instagram" target="_blank"><i class="ui-instagram"></i></a>
@@ -185,12 +188,21 @@ border: 1px solid #4196e5;
 							<!-- Contact Form -->
 							<form id="contact-form" class="contact-form material" method="post" action="#">
 
+								<!-- Subject -->
+								<div class="material__form-group form-group">
+									<input type="text" name="name" id="name" class="form-input material__input" required="">
+									<label for="name" class="material__label"> &nbsp;Name
+										<abbr title="required" class="required">*</abbr>
+									</label>
+									<span class="material__underline"></span>
+								</div>
+
 								<div class="row">
 									<div class="col-lg-6">
 										<!-- Name -->
 										<div class="material__form-group form-group">
 											<input type="text" name="name" id="name" class="form-input material__input" required="">
-											<label for="name" class="material__label"> &nbsp;Name
+											<label for="name" class="material__label"> &nbsp;Phone Number
 												<abbr title="required" class="required">*</abbr>
 											</label>
 											<span class="material__underline"></span>
@@ -208,13 +220,12 @@ border: 1px solid #4196e5;
 									</div>
 								</div>
 
-								<!-- Subject -->
-								<div class="material__form-group form-group">
+								<!-- <div class="material__form-group form-group">
 									<input type="text" name="subject" id="subject" class="form-input material__input">
 									<label for="subject" class="material__label"> &nbsp;Subject
 									</label>
 									<span class="material__underline"></span>
-								</div>							
+								</div> -->
 
 								<div class="material__form-group form-group">
 									<textarea id="message" name="message" rows="7" class="form-input material__input" required=""></textarea>

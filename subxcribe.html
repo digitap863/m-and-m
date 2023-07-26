@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sedona | Elements</title>
+    
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="">
+    
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Barlow:400,600%7COpen+Sans:400,400i,700' rel='stylesheet'>
+    
+        <!-- Css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/font-icons.css" />
+        <link rel="stylesheet" href="revolution/css/settings.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+        
+  <style>
+    .confirmation {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <!-- <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form> -->
+
+    <section class="section-wrap bg-light newsletter">
+    <div class="container">
+        <div class="title-row title-row--boxed text-center">
+            <h3 class="section-title">Our Daily Newsletter</h3>
+            <p class="lead">Get the latest and our most important news</p>
+        </div>
+        <div class="widget widget_mc4wp_form_widget">
+            <div class="newsletter__container">
+                <div class="newsletter__form">
+
+                    <form class="mc4wp-form" id="contactForm" method="post">
+                        <div class="mc4wp-form-fields">
+                            <div class="form-group">
+                                <input type="email" name="EMAIL" placeholder="Your email" required="" style="border-radius: 10px;">
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn--lg btn--color" value="Subscribe Now" style="border-radius: 10px;opacity:0.85;">
+                            </div>
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+
+        <div align="center">
+            <div class="alert alert-success alert-dismissible fade show confirmation" id="confirmationMsg" role="alert" style="width:300px">
+            <strong>Subscribed Successfully!</strong>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+  <!-- <div class="confirmation" id="confirmationMsg">Message sent successfully!</div> -->
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const confirmationMsg = document.getElementById("confirmationMsg");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Here, you can add your code to process the form submission
+      // For demonstration purposes, we'll just simulate a delay before showing the confirmation message.
+
+      // Simulate form submission delay (you can replace this with actual form submission logic)
+      setTimeout(function() {
+        // Show the confirmation message
+        confirmationMsg.style.display = "block";
+
+        // Hide the confirmation message after 3 seconds
+        setTimeout(function() {
+          confirmationMsg.style.display = "none";
+        }, 10000);
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

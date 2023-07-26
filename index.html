@@ -941,117 +941,39 @@ display:none;
 			</section> <!-- end testimonials -->
 
 	<!-- Newsletter -->
-			<section class="section-wrap bg-light newsletter">
-				<div class="container">
-					<div class="title-row title-row--boxed text-center">
-						<h3 class="section-title">Our Daily Newsletter</h3>
-						<p class="lead">Get the latest and our most important news</p>
-					</div>
-					<div class="widget widget_mc4wp_form_widget">
-						<div class="newsletter__container">
-							<div class="newsletter__form">
-								<form class="mc4wp-form" method="post">
-									<div class="mc4wp-form-fields">
-										<div class="form-group">
-											<input type="email" name="EMAIL" placeholder="Your email" required="" style="border-radius: 10px;">
-										</div>
-										<div class="form-group">
-											<input type="submit" class="btn btn--lg btn--color" value="Subscribe Now" style="border-radius: 10px;opacity:0.85;">
-										</div>
-									</div>
-								</form>
-							</div> 
-						</div>
-					</div>
-				</div>
-			</section> <!-- end newsletter -->
-
-			<!-- From Blog -->
-		<!-- <section class="section-wrap blog-grid">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-4">
-							<div class="blog-grid__title-col d-flex flex-column mb-lg-48">
-								<div class="title-row">
-									<p class="subtitle">From Blog</p>
-									<h2 class="section-title">Specialized news</h2>
-									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequun tur magni dolores eos qui
-									ratione</p>
+	<section class="section-wrap bg-light newsletter">
+		<div class="container">
+			<div class="title-row title-row--boxed text-center">
+				<h3 class="section-title">Our Daily Newsletter</h3>
+				<p class="lead">Get the latest and our most important news</p>
+			</div>
+			<div class="widget widget_mc4wp_form_widget">
+				<div class="newsletter__container">
+					<div class="newsletter__form">
+	
+						<form class="mc4wp-form" id="contactForm" method="post" action="#">
+							<div class="mc4wp-form-fields">
+								<div class="form-group">
+									<input type="email" name="EMAIL" placeholder="Your email" required="" style="border-radius: 10px;">
 								</div>
-								<div class="call-us mt-auto">
-									<i class="icon-Dispacher-2 call-us__icon"></i>
-									<span class="call-us__title">Call us anytime</span>
-									<a href="tel:1-800-995-3959" class="call-us__phone-number"> 1-800-995-3959</a>
+								<div class="form-group">
+									<input type="submit" class="btn btn--lg btn--color" value="Subscribe Now" style="border-radius: 10px;opacity:0.85;">
 								</div>
-							</div>							
-						</div>						
-
-						<div class="col-lg-7 offset-lg-1">
-							<div class="from-blog">
-								<div class="row row-60">
-									<div class="col-lg-6">
-										<article class="entry">
-											<div class="entry__img-holder">
-												<a href="single-post.html">
-													<img src="img/blog/from_blog_1.jpg" class="entry__img" alt="">
-												</a>
-											</div>
-											<div class="entry__body">
-												<ul class="entry__meta">
-													<li class="entry__meta-date">
-														<span>15 November 2018</span>
-													</li>
-												</ul>
-												<h4 class="entry__title">
-													<a href="single-post.html">Best buildings of 2018 revealed at day one of World Architecture Festival 2018.</a>
-												</h4>
-											</div>
-										</article>
-									</div>
-									<div class="col-lg-6">
-										<article class="entry">
-											<div class="entry__img-holder">
-												<a href="single-post.html">
-													<img src="img/blog/from_blog_2.jpg" class="entry__img" alt="">
-												</a>
-											</div>
-											<div class="entry__body">
-												<ul class="entry__meta">
-													<li class="entry__meta-date">
-														<span>15 November 2018</span>
-													</li>
-												</ul>
-												<h4 class="entry__title">
-													<a href="single-post.html">Sunken washroom by Studio 304 allows residents to bathe in a garden setting.</a>
-												</h4>
-											</div>
-										</article>
-									</div>
-								</div>
-								<div class="from-blog__recent-posts">
-									<ul class="from-blog__recent-posts-list">
-										<li class="from-blog__recent-posts-item">
-											<span class="from-blog__post-number">1</span>
-											<a href="single-post.html" class="from-blog__post-url">Guadalajara offers "extraordinary opportunities" for young architects</a>
-										</li>
-										<li class="from-blog__recent-posts-item">
-											<span class="from-blog__post-number">2</span>
-											<a href="single-post.html" class="from-blog__post-url">Lacy Brick by Pamphilon ArchitectsResidentialPamphilon Architects adds textured
-											brick extension to Edwardian house in London</a>
-										</li>
-										<li class="from-blog__recent-posts-item">
-											<span class="from-blog__post-number">3</span>
-											<a href="single-post.html" class="from-blog__post-url">Guadalajara offers "extraordinary opportunities" for young architects</a>
-										</li>
-									</ul>
-								</div>								 
 							</div>
-						</div>
-
-					</div>
+						</form>
+					</div> 
 				</div>
-			</section> -->
-			<!-- end from blog -->      
+			</div>
+	
+			<div align="center">
+				<div class="alert alert-success alert-dismissible fade show confirmation" id="confirmationMsg" role="alert" style="width:300px">
+				<strong>Subscribed To Newsletter !</strong>
+				</div>
+			</div>
+	
+		</div>
+		</section>
+     
 
 		<!-- Services -->
 		<!--	<section class="section-wrap pt-0 pb-0">
@@ -1203,7 +1125,28 @@ display:none;
 
 		</div> <!-- end content wrapper -->
 	</main> <!-- end main wrapper -->
-
+	<script>
+		const form = document.getElementById("contactForm");
+		const confirmationMsg = document.getElementById("confirmationMsg");
+	
+		form.addEventListener("submit", function(event) {
+		  event.preventDefault();
+	
+		  // Here, you can add your code to process the form submission
+		  // For demonstration purposes, we'll just simulate a delay before showing the confirmation message.
+	
+		  // Simulate form submission delay (you can replace this with actual form submission logic)
+		  setTimeout(function() {
+			// Show the confirmation message
+			confirmationMsg.style.display = "block";
+	
+			// Hide the confirmation message after 10 seconds
+			setTimeout(function() {
+			  confirmationMsg.style.display = "none";
+			}, 10000);
+		  }, 1000);
+		});
+	  </script>
 
 	<!-- jQuery Scripts -->
 	<script src="js/jquery.min.js"></script>

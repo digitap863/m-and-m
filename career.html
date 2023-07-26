@@ -27,6 +27,18 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
+<style>
+	.material__input {
+border-bottom: 2.5px solid #8a9eb0bb !important;
+border: 1px solid #8a9eb0bb;
+	}
+
+@media (min-width: 1200px)	{
+	#cont2.container {
+	 margin: 0 120px auto;	
+	}
+}	
+</style>
 </head>
 
 <body>
@@ -138,56 +150,149 @@
 				</div>
 			</section> <!-- end page title -->
 
-			<section class="section-wrap">
-			<div class="container">    
+
+			<section class="section-wrap" style="background: #f5f5f5;">
+			<div class="container" id="cont2">    
             <div class="title-row">
                 <h2>Come<span class="hero-dot">.</span><br>Work With Us!</h2>   
             </div>
 
-			<form method="post">
-            <div class="row mb-64">
-                <div class="col-md-6">
+			<!-- <div class="widget widget_mc4wp_form_widget">
+				<div class="newsletter__container">
+					<div class="newsletter__form">
+	
+						<form class="mc4wp-form" id="contactForm" method="post">
+							<div class="mc4wp-form-fields">
+								<div class="form-group">
+									<input type="email" name="EMAIL" placeholder="Your email" required="" style="border-radius: 10px;">
+								</div>
+								<div class="form-group">
+									<input type="submit" class="btn btn--lg btn--color" value="Subscribe Now" style="border-radius: 10px;opacity:0.85;">
+								</div>
+							</div>
+						</form>
+					</div> 
+				</div>
+			</div> -->
+
+			 <form method="post" class="careerform" id="contactForm">
+            <div class="row">
+                <div class="col-md-7">
 
                     <div class="material__form-group form-group">
                         <input type="text" name="name" id="name" class="form-input material__input" required>
-                        <label for="name" class="material__label">Name
+                        <label for="name" class="material__label">&nbsp;Name
                              <abbr title="required" class="required">*</abbr> 
                         </label>
                         <span class="material__underline"></span>
                     </div>
+
                     <div class="material__form-group form-group">
-                        <input type="text" name="name" id="name" class="form-input material__input" required>
-                        <label for="name" class="material__label">Phone
+                        <input type="number" name="phone" id="phone" class="form-input material__input" required>
+                        <label for="Phone" class="material__label">&nbsp;Phone
                             <abbr title="required" class="required">*</abbr>
                         </label>
                         <span class="material__underline"></span>
                     </div>
+
                     <div class="material__form-group form-group">
-                        <input type="text" name="name" id="name" class="form-input material__input" required>
-                        <label for="name" class="material__label">Email-id
+                        <input type="email" name="mail" id="mail" class="form-input material__input" required>
+                        <label for="Email" class="material__label">&nbsp;Email-id
                             <abbr title="required" class="required">*</abbr>
                         </label>
                         <span class="material__underline"></span>
                     </div>
+
+                    <div class="material__form-group form-group">
+                        <input type="text" name="place" id="place" class="form-input material__input" required>
+                        <label for="Place" class="material__label">&nbsp;Place
+                            <abbr title="required" class="required">*</abbr>
+                        </label>
+                        <span class="material__underline"></span>
+                    </div>
+
                     <button type="submit" class="btn btn--md btn--dark" style="border-radius: 50px;" >
                         <span>Send</span>
                     </button>
+					
+					<div style="text-align:left;margin-top:12px">
+						<div class="alert alert-info alert-dismissible fade show confirmation" id="confirmationMsg" role="alert" style="width:300px">
+						<strong>Sent Successfully !</strong>
+						</div>
+					</div>
 
-                    <!-- <div class="material__form-group form-group">
-                        <textarea id="message" name="message" rows="7" class="form-input material__input" required=""></textarea>
-                        <label for="message" class="material__label">Message
-                            <abbr title="required" class="required">*</abbr>
-                        </label>
-                        <span class="material__underline"></span>
-                    </div> -->
-
-                </div> <!-- end col -->
-
+                </div> 
+				</div>
             </div>
             </form>
+			<br>
+			<!-- <div style="text-align:left">
+				<div class="alert alert-success alert-dismissible fade show confirmation" id="confirmationMsg" role="alert" style="width:300px">
+				<strong>Sent Successfully !</strong>
+				</div>
+			</div> -->
+
             </div>
-            </section>
+            </section> 
             
+
+
+			<!-- <section class="section-wrap bg-light newsletter">
+				<div class="container">
+					<div class="title-row title-row--boxed text-center">
+						<h3 class="section-title">Our Daily Newsletter</h3>
+						<p class="lead">Get the latest and our most important news</p>
+					</div>
+					<div class="widget widget_mc4wp_form_widget">
+						<div class="newsletter__container">
+							<div class="newsletter__form">
+			
+								<form method="post" class="contactForm">
+									<div class="row mb-64">
+										<div class="col-md-6">
+						
+											<div class="material__form-group form-group">
+												<input type="text" name="name" id="name" class="form-input material__input" required>
+												<label for="name" class="material__label">Name
+													 <abbr title="required" class="required">*</abbr> 
+												</label>
+												<span class="material__underline"></span>
+											</div>
+											<div class="material__form-group form-group">
+												<input type="text" name="name" id="name" class="form-input material__input" required>
+												<label for="name" class="material__label">Phone
+													<abbr title="required" class="required">*</abbr>
+												</label>
+												<span class="material__underline"></span>
+											</div>
+											<div class="material__form-group form-group">
+												<input type="text" name="name" id="name" class="form-input material__input" required>
+												<label for="name" class="material__label">Email-id
+													<abbr title="required" class="required">*</abbr>
+												</label>
+												<span class="material__underline"></span>
+											</div>
+											<button type="submit" class="btn btn--md btn--dark" style="border-radius: 50px;" >
+												<span>Send</span>
+											</button> 
+											
+										</div> 
+						
+									</div>
+									</form>
+							</div> 
+						</div>
+					</div>
+			
+					<div align="center">
+						<div class="alert alert-success alert-dismissible fade show confirmation" id="confirmationMsg" role="alert" style="width:300px">
+						<strong>Subscribed To Newsletter!</strong>
+						</div>
+					</div>
+			
+				</div>
+				</section> -->
+		
 
 			<!-- Footer -->
 			<footer class="footer" style="background-image: url(img/footer/3.jpg)"> 
@@ -259,6 +364,28 @@
 		</div> <!-- end content wrapper -->
 	</main> <!-- end main wrapper -->
 
+	<script>
+		const form = document.getElementById("contactForm");
+		const confirmationMsg = document.getElementById("confirmationMsg");
+	
+		form.addEventListener("submit", function(event) {
+		  event.preventDefault();
+	
+		  // Here, you can add your code to process the form submission
+		  // For demonstration purposes, we'll just simulate a delay before showing the confirmation message.
+	
+		  // Simulate form submission delay (you can replace this with actual form submission logic)
+		  setTimeout(function() {
+			// Show the confirmation message
+			confirmationMsg.style.display = "block";
+	
+			// Hide the confirmation message after 10 seconds
+			setTimeout(function() {
+			  confirmationMsg.style.display = "none";
+			}, 10000);
+		  }, 100);
+		});
+	  </script>
 
 	<!-- jQuery Scripts -->
 	<script src="js/jquery.min.js"></script>
